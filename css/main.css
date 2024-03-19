@@ -1,0 +1,54 @@
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: rgb(243, 238, 238); /* Change text color here */
+}
+.rounded-input {
+      border-radius: 25px;
+    }
+    
+    footer {
+      background-color:rgba(47, 47, 47, 1);
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+.contact-us
+{
+  height: 25vh;
+}
+
+.button__send{
+  width: 80%;
+}
+
+.table__borber {
+  border-color: rgba(47, 47, 47, 1);
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    height: 50vh; /* Измените высоту, чтобы она соответствовала вашим потребностям */
+  }
+}
+
+.main {
+  background-image: url("../img/main.png");
+  height: 80vh;
+  width: 100%;
+}
+
+.navbar {
+  background-color: red; /* Make the navbar transparent */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the navbar stretches across the screen */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+}
