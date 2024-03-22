@@ -13,83 +13,64 @@
 
 </head>
 <body>
-  <div class="main container-fluid p-0 text-center">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom" >
     <div class="container-fluid">
         <!-- Лого в левом углу -->
         <a class="navbar-brand me-5 " href="#"><img src="img/logo.png" alt="Логотип"></a>
         <!-- Кнопка для разворачивания на мобильных устройствах -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Разделы навигации -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item px-5">
                     <a class="nav-link" href="#">Главная</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item px-5">
                     <a class="nav-link" href="#">Услуги</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item px-5">
                     <a class="nav-link" href="#">О компании</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item px-5">
                     <a class="nav-link" href="#">Контакты</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">+7 920 463 78 21<br>г.Мариуполь, ДНР</a>
                 </li>
             </ul>
         </div>
+        <a class="navbar-brand me-5 " href="#">+7 920 463 78 21<br>г.Мариуполь, ДНР</a>
     </div>
   </nav>
   
-  <div class="main container-fluid p-0 text-center">
+  <section id="main">
+    <div class="container-fluid p-0 position-relative pb-5">
+      <img class="main-img" src="img/main.png">
+      <div class="position-absolute top-50 start-50 translate-middle text-center" style="width: 70%;">
+          <h2 class="text-black">Качественные бетонные работы по всей территории ДНР</h2>
+          <h6 class="text-black">Получите надежное и долговечное покрытие.</h6> 
+          <h6 class="text-black">Соблюдение технологий и гарантия качества.</h6> 
+          <button class="btn btn-primary rounded-3 mt-3">Связаться с нами</button>
+    </div>
+  </section>
+
+  <!-- <div class="main container-fluid p-0 text-center">
+    
     <div class="position-relative d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
       <h2 class="text-black-50">Качественные бетонные работы по всей территории ДНР</h2>
       <h6 class="text-black-50">Получите надежное и долговечное покрытие.</h6> 
       <h6 class="text-black-50">Соблюдение технологий и гарантия качества.</h6> 
       <button class="btn btn-primary rounded-pill mt-3">Связаться с нами</button>
     </div>
-  </div>
-</div>
-    
-<div class="card">
-  <!-- Верхняя часть -->
-  <div class="card__top">
-    <!-- Изображение-ссылка товара -->
-    <a href="#" class="card__image">
-      <img
-        src="./image/iphone-14-pro-max-gold.png"
-        alt="Apple IPhone 14 PRO Max Gold"
-      />
-    </a>
-    <!-- Скидка на товар -->
-    <div class="card__label">-10%</div>
-  </div>
-  <!-- Нижняя часть -->
-  <div class="card__bottom">
-    <!-- Цены на товар (с учетом скидки и без)-->
-    <div class="card__prices">
-      <div class="card__price card__price--discount">135 000</div>
-      <div class="card__price card__price--common">150 000</div>
-    </div>
-    <!-- Ссылка-название товара -->
-    <a href="#" class="card__title">
-      Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
-    </a>
-    <!-- Кнопка добавить в корзину -->
-    <button class="card__add">В корзину</button>
-  </div>
-</div> 
 
-  
-  
-<h1 class = "text-center my-5">Услуги</h1>
+  </div> -->
+
+  <section id="service-cards">
+    <div class="container-fluid p-0 my-5 py-5">
+        <h1 class = "text-center m-0">Услуги</h1>
+    </div>
 <div class="container-fluid">
   <div class="row row-cols-1 row-cols-md-3 mt-5">
-    <div class="col mb-4">
+    <div class="col-mb-4">
       <div class="card border-0 rounded">
         <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 1">
         <div class="card-body text-center">
@@ -98,7 +79,7 @@
         </div>
       </div>
     </div>
-    <div class="col mb-4">
+    <div class="col-mb-4">
       <div class="card border-0 rounded">
         <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 2">
         <div class="card-body text-center">
@@ -107,7 +88,7 @@
         </div>
       </div>
     </div>
-    <div class="col mb-4">
+    <div class="col-mb-4">
       <div class="card border-0 rounded">
         <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 3">
         <div class="card-body text-center">
@@ -116,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div class="col mb-4">
+    <div class="col-mb-4">
       <div class="card border-0 rounded">
         <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 1">
         <div class="card-body text-center">
@@ -125,7 +106,7 @@
         </div>
       </div>
     </div>
-    <div class="col mb-4">
+    <div class="col-mb-4">
       <div class="card border-0 rounded">
         <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 2">
         <div class="card-body text-center">
@@ -134,7 +115,7 @@
         </div>
       </div>
     </div>
-    <div class="col mb-4">
+    <div class="col-mb-4">
       <div class="card border-0 rounded">
         <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 3">
         <div class="card-body text-center">
@@ -145,6 +126,30 @@
     </div>
   </div>
 </div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="container text-center">
+          <img src="./img/monolit.png"  alt="Монолит">
+          <h5>Заголовок карточки 3</h5>
+        </div>
+        <div class="container text-center">
+          <img src="./img/monolit.png"  alt="Монолит">
+          <h5>Заголовок карточки 3</h5>
+        </div>
+        <div class="container text-center">
+          <img src="./img/monolit.png"  alt="Монолит">
+          <h5>Заголовок карточки 3</h5>
+        </div>
+    </div>
+  </div>
+</div>
+  </section>
+  
+  
+
 
 <div class="container-fluid rounded" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
   <div class="row">
@@ -279,11 +284,11 @@
 </div>
 
 
-<div class="container-fluid" style="background-color: rgba(241, 241, 241, 1);">
+<div class="container-fluid my-5" style="background-color: rgba(241, 241, 241, 1);">
   <div class="position-relative">
-    <h1 class="text-center">О компании</h1>
-    <p class="text-center m-5"><b>КругозорДНР</b> - это не просто строительные специалисты, мы создаем пространства, которые превосходят ожидания. Современные технологии торкретирования стен придают проектам уникальность и стойкость. Обращаясь к нам, вы получаете не просто строительную компанию, а партнера, готового воплотить ваши идеи в реальность с вниманием к каждой детали.</p>
-    <h1 class="text-center">Контакты</h1>
+    <h1 class="text-center py-5">О компании</h1>
+    <p class="text-center"><b>КругозорДНР</b> - это не просто строительные специалисты, мы создаем пространства, которые превосходят ожидания. Современные технологии торкретирования стен придают проектам уникальность и стойкость. Обращаясь к нам, вы получаете не просто строительную компанию, а партнера, готового воплотить ваши идеи в реальность с вниманием к каждой детали.</p>
+    <h1 class="text-center py-5">Контакты</h1>
       <div class="container mt-5">
         <!-- Первая строка -->
         <div class="row">
