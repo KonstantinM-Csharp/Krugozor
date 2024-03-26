@@ -16,7 +16,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom" >
     <div class="container-fluid">
         <!-- Лого в левом углу -->
-        <a class="navbar-brand me-5 " href="#"><img src="img/logo.png" alt="Логотип"></a>
+        <a class="navbar-brand me-5 " href="#main"><img src="img/logo.png" alt="Логотип"></a>
         <!-- Кнопка для разворачивания на мобильных устройствах -->
         <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,20 +25,20 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item px-5">
-                    <a class="nav-link" href="#">Главная</a>
+                    <a class="nav-link" href="#main">Главная</a>
                 </li>
                 <li class="nav-item px-5">
-                    <a class="nav-link" href="#">Услуги</a>
+                    <a class="nav-link" href="#service-cards">Услуги</a>
                 </li>
                 <li class="nav-item px-5">
-                    <a class="nav-link" href="#">О компании</a>
+                    <a class="nav-link" href="#about-us">О компании</a>
                 </li>
                 <li class="nav-item px-5">
-                    <a class="nav-link" href="#">Контакты</a>
+                    <a class="nav-link" href="#contact">Связаться с нами</a>
                 </li>
             </ul>
         </div>
-        <a class="navbar-brand me-5 " href="#">+7 920 463 78 21<br>г.Мариуполь, ДНР</a>
+        <a class="navbar-brand me-5 " href="#contact">+7 920 463 78 21<br>г.Мариуполь, ДНР</a>
     </div>
   </nav>
   
@@ -52,190 +52,148 @@
           <button class="btn btn-primary rounded-3 mt-3">Связаться с нами</button>
     </div>
   </section>
+  
+  
+<section id="service-cards">
+  <h1 class="text-center mb-5">Услуги</h1>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-4 p-0">
+          <div class="item container text-center p-0">
+            <img src="./img/services/monolit.jpg"  alt="Монолит">
+            <h5>Монолитные работы</h5>
+          </div>
+        </div>
+        
+        <div class="col-sm-4 p-0">
+        <div class="container text-center p-0 ">
+          <img src="./img/services/keramsit.jpg"  alt="Монолит">
+          <h5>Керамзитобетон</h5>
+        </div>
+        </div>
 
-  <!-- <div class="main container-fluid p-0 text-center">
-    
-    <div class="position-relative d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
-      <h2 class="text-black-50">Качественные бетонные работы по всей территории ДНР</h2>
-      <h6 class="text-black-50">Получите надежное и долговечное покрытие.</h6> 
-      <h6 class="text-black-50">Соблюдение технологий и гарантия качества.</h6> 
-      <button class="btn btn-primary rounded-pill mt-3">Связаться с нами</button>
+    <div class="col-sm-4 p-0">
+      <div class="container text-center p-0">
+        <img src="./img/services/floor.jpg"  alt="Монолит">
+        <h5>Стяжка полов</h5>
+      </div>
     </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="container text-center">
+          <img src="./img/services/roof.jpg"  alt="Монолит">
+          <h5>Мягкая кровля</h5>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+      <div class="container text-center">
+        <img src="./img/services/lab.jpg"  alt="Монолит">
+        <h5>Услуги лаборатории</h5>
+      </div>
+      </div>
 
-  </div> -->
-
-  <section id="service-cards">
-    <div class="container-fluid p-0 my-5 py-5">
-        <h1 class = "text-center m-0">Услуги</h1>
-    </div>
-<div class="container-fluid">
-  <div class="row row-cols-1 row-cols-md-3 mt-5">
-    <div class="col-mb-4">
-      <div class="card border-0 rounded">
-        <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 1">
-        <div class="card-body text-center">
-          <h5 class="card-title">Заголовок карточки 1</h5>
-          <p class="card-text">Описание карточки 1</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-mb-4">
-      <div class="card border-0 rounded">
-        <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 2">
-        <div class="card-body text-center">
-          <h5 class="card-title">Заголовок карточки 2</h5>
-          <p class="card-text">Описание карточки 2</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-mb-4">
-      <div class="card border-0 rounded">
-        <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 3">
-        <div class="card-body text-center">
-          <h5 class="card-title">Заголовок карточки 3</h5>
-          <p class="card-text">Описание карточки 3</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-mb-4">
-      <div class="card border-0 rounded">
-        <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 1">
-        <div class="card-body text-center">
-          <h5 class="card-title">Заголовок карточки 1</h5>
-          <p class="card-text">Описание карточки 1</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-mb-4">
-      <div class="card border-0 rounded">
-        <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 2">
-        <div class="card-body text-center">
-          <h5 class="card-title">Заголовок карточки 2</h5>
-          <p class="card-text">Описание карточки 2</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-mb-4">
-      <div class="card border-0 rounded">
-        <img src="./img/monolit.png" class="card-img-top rounded" alt="Картинка 3">
-        <div class="card-body text-center">
-          <h5 class="card-title">Заголовок карточки 3</h5>
-          <p class="card-text">Описание карточки 3</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="container-fluid">
-  <div class="row">
     <div class="col-md-4">
-        <div class="container text-center">
-          <img src="./img/monolit.png"  alt="Монолит">
-          <h5>Заголовок карточки 3</h5>
-        </div>
-        <div class="container text-center">
-          <img src="./img/monolit.png"  alt="Монолит">
-          <h5>Заголовок карточки 3</h5>
-        </div>
-        <div class="container text-center">
-          <img src="./img/monolit.png"  alt="Монолит">
-          <h5>Заголовок карточки 3</h5>
-        </div>
+      <div class="container text-center">
+        <img src="./img/services/wall.jpg"  alt="Монолит">
+        <h5>Торкретирование стен</h5>
+      </div>
     </div>
-  </div>
-</div>
-  </section>
-  
+    </div>
+</section>
+
   
 
-
-<div class="container-fluid rounded" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
-  <div class="row">
-    <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
-      <div class="container text-center">
-        <h2>Монолитные работы</h2>
-        <p class="mt-5">Это отдельный метод строительства зданий, но также благодаря им возводятся отдельные элементы: колонны в качестве подпорок перекрытий, монолитные стены, перекрытия между этажами. Есть три типа фундаментов: сплошной, столбчатый, 
-          ленточный.</p>
+<section class="services my-5">
+  
+  <div class="container-fluid rounded" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
+    <div class="row">
+      <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <h2>Монолитные работы</h2>
+          <p class="mt-5">Это отдельный метод строительства зданий, но также благодаря им возводятся отдельные элементы: колонны в качестве подпорок перекрытий, монолитные стены, перекрытия между этажами. Есть три типа фундаментов: сплошной, столбчатый, 
+            ленточный.</p>
+        </div>
       </div>
+      <div class="col-md-6 rounded-right p-0 text-center">
+        <img src="./img/monolit.png" class="m-3" alt="Изображение">
     </div>
-    <div class="col-md-6 rounded-right p-0 text-center">
-      <img src="./img/monolit.png" class="m-3" alt="Изображение">
-  </div>
-  </div>
-</div>
-
-<div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
-  <div class="row">
-    <div class="col-md-6 rounded-right p-0 text-center">
-      <img src="./img/monolit.png" class="m-3" alt="Изображение">
     </div>
-    <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
-      <div class="container text-center">
-        <h2>Керамзитобетон</h2>
-        <p class="mt-5">Керамзитобетон представляет собой композитный материал, в котором в качестве заполнителя используется керамзит. Фракция заполнителя влияет на плотность и другие технические характеристики материала. Смесь в различных пропорциях включает в себя: цемент, песок, керамзит, вода. </p>
+  </div>
+  
+  <div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
+    <div class="row">
+      <div class="col-md-6 rounded-right p-0 text-center">
+        <img src="./img/monolit.png" class="m-3" alt="Изображение">
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
-  <div class="row">
-    <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
-      <div class="container text-center">
-        <h2>Стяжка полов</h2>
-        <p class="mt-5">Стяжка — это слой строительного раствора, который укладывают на пол для обеспечения ровной поверхности. Она состоит из цементных материалов и песка. Стяжка считается основой отделки пола и серьезно влияет на его качество.</p>
-      </div>
-    </div>
-    <div class="col-md-6 rounded-right p-0 text-center">
-      <img src="./img/monolit.png" class="m-3" alt="Изображение">
-  </div>
-  </div>
-</div>
-
-<div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
-  <div class="row">
-    <div class="col-md-6 rounded-right p-0 text-center">
-      <img src="./img/monolit.png" class="m-3" alt="Изображение">
-    </div>
-    <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
-      <div class="container text-center">
-        <h2>Мягкая кровля</h2>
-        <p class="mt-5">Мягкая кровля - это условное название конструкции кровельного ковра на основе картона, стеклохолста и других материалов, покрытых слоем модифицированного битума. К данной категории покрытий также можно отнести рулонные материалы, ПВХ мембраны для плоских крыш.</p>
+      <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <h2>Керамзитобетон</h2>
+          <p class="mt-5">Керамзитобетон представляет собой композитный материал, в котором в качестве заполнителя используется керамзит. Фракция заполнителя влияет на плотность и другие технические характеристики материала. Смесь в различных пропорциях включает в себя: цемент, песок, керамзит, вода. </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
-  <div class="row">
-    <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
-      <div class="container text-center">
-        <h2>Услуги лаборатории</h2>
-        <p class="mt-5">Лаборатория решает важные вопросы — проводит испытания строительных материалов и конструкций, грунтов, выполняет контроль качества строительных работ, обследование конструкций зданий, сооружений, дорожного покрытия с оформлением технических заключений и отчетов.</p>
+  
+  <div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
+    <div class="row">
+      <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <h2>Стяжка полов</h2>
+          <p class="mt-5">Стяжка — это слой строительного раствора, который укладывают на пол для обеспечения ровной поверхности. Она состоит из цементных материалов и песка. Стяжка считается основой отделки пола и серьезно влияет на его качество.</p>
+        </div>
+      </div>
+      <div class="col-md-6 rounded-right p-0 text-center">
+        <img src="./img/monolit.png" class="m-3" alt="Изображение">
+    </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
+    <div class="row">
+      <div class="col-md-6 rounded-right p-0 text-center">
+        <img src="./img/monolit.png" class="m-3" alt="Изображение">
+      </div>
+      <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <h2>Мягкая кровля</h2>
+          <p class="mt-5">Мягкая кровля - это условное название конструкции кровельного ковра на основе картона, стеклохолста и других материалов, покрытых слоем модифицированного битума. К данной категории покрытий также можно отнести рулонные материалы, ПВХ мембраны для плоских крыш.</p>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 rounded-right p-0 text-center">
-      <img src="./img/monolit.png" class="m-3" alt="Изображение">
   </div>
-  </div>
-</div>
-
-<div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
-  <div class="row">
-    <div class="col-md-6 rounded-right p-0 text-center">
-      <img src="./img/monolit.png" class="m-3" alt="Изображение">
+  
+  <div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
+    <div class="row">
+      <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <h2>Услуги лаборатории</h2>
+          <p class="mt-5">Лаборатория решает важные вопросы — проводит испытания строительных материалов и конструкций, грунтов, выполняет контроль качества строительных работ, обследование конструкций зданий, сооружений, дорожного покрытия с оформлением технических заключений и отчетов.</p>
+        </div>
+      </div>
+      <div class="col-md-6 rounded-right p-0 text-center">
+        <img src="./img/monolit.png" class="m-3" alt="Изображение">
     </div>
-    <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
-      <div class="container text-center">
-        <h2>Торкретирование стен</h2>
-        <p class="mt-5">
-          Торкретирование стен - это технология нанесения специальной смеси, которая осуществляется путем разбрызгивания. Выполняется это при помощи торкретного оборудования. В итоге, весь бетонный состав равномерно распределяется по поверхности, образуя плотный слой.</p>
+    </div>
+  </div>
+  
+  <div class="container-fluid rounded mt-5" style="width: 80%; background-color: rgba(225, 225, 225, 1);">
+    <div class="row">
+      <div class="col-md-6 rounded-right p-0 text-center">
+        <img src="./img/monolit.png" class="m-3" alt="Изображение">
+      </div>
+      <div class="col-md-6 rounded-left p-0 d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <h2>Торкретирование стен</h2>
+          <p class="mt-5">
+            Торкретирование стен - это технология нанесения специальной смеси, которая осуществляется путем разбрызгивания. Выполняется это при помощи торкретного оборудования. В итоге, весь бетонный состав равномерно распределяется по поверхности, образуя плотный слой.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
 
 <h3 class="text-center m-5">Стоимость работ</h3>
 <div class="text-center mx-5 my-5">
@@ -283,7 +241,7 @@
   </table>
 </div>
 
-
+<section id="about-us">
 <div class="container-fluid my-5" style="background-color: rgba(241, 241, 241, 1);">
   <div class="position-relative">
     <h1 class="text-center py-5">О компании</h1>
@@ -314,7 +272,9 @@
       <h2 class="text-center mt-5 pb-5">Выполняем заказы по всей территории ДНР</h2>
   </div>
 </div>
+</section>
 
+<section id="contact">
 <div class="container-fluid contact-us h-40 mb-5">
   <div class="container">
     <h3 class="text-center my-5">Остались вопросы?</h3>
@@ -338,6 +298,7 @@
   </div>
   </div>
 </div>
+</section>
 
 <footer class="mt-5">
   <div class="row">

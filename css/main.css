@@ -54,3 +54,7 @@ body {
 {
   position: absolute;
 }
+.item
+{
+  float:right;
+}  
