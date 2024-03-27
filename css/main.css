@@ -5,46 +5,55 @@ body {
   font-style: normal;
 }
 
+footer{
+  background-color:rgba(47, 47, 47, 1);
+  text-align: center;
+  color: white;
+}
+.heading{
+  font-weight: 400;
+  font-size: 48px;
+}
+.main-text{
+  font-weight: 300;
+  font-size: 24px;
+}
+.service-cards-text
+{
+  font-weight: 300;
+  font-size: 32px;
+}
+.btn-contact {
+  background-color:rgba(47, 47, 47, 1);
+  color:white;
+  padding: 15px 30px; /* задаем отступы */
+  border-radius: 10px; /* скругляем углы кнопки */
+  transition: all 0.3s ease; /* плавность при изменении стилей */
+}
+.btn-contact:hover {
+  background-color: rgba(47, 47, 47, 1); /* изменение цвета фона при наведении */
+  color: #fff; /* изменение цвета текста при наведении */
+}
+a{
+  color: white;
+}
 .navbar .navbar-nav .nav-link {
   color: rgb(248, 239, 239); /* Change text color here */
 }
-.navbar-brand
+.navbar-brand 
 {
   color: white;
 }
 .navbar-custom {
   background-color: rgba(39, 37, 37, 0.8); /* Цвет фона с прозрачностью */
 }
-
-
 .rounded-input {
-      border-radius: 25px;
-    }
-    
-    footer {
-      background-color:rgba(47, 47, 47, 1);
-      padding: 20px 0;
-      text-align: center;
-      color: white;
-    }
-.contact-us
-{
-  height: 25vh;
-}
-
-.button__send{
-  width: 80%;
-}
+  border-radius: 25px;
+ }
 
 .table__borber {
   border-color: rgba(47, 47, 47, 1);
 }
-
-
-/* .main {
-  height: 80vh;
-  width: 100%;
-} */
 .main-img
 {
   width: 100%;
@@ -54,7 +63,13 @@ body {
 {
   position: absolute;
 }
-.item
+.service-item
 {
-  float:right;
-}  
+  width: 80%; 
+  background-color: rgba(225, 225, 225, 1);
+}
+.service-img
+{
+  height: 80%;/* Set height to 100% of parent container */
+  width: auto; 
+}
