@@ -1,7 +1,6 @@
 body {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -9,34 +8,28 @@ footer{
   background-color:rgba(47, 47, 47, 1);
   text-align: center;
   color: white;
+  height:25vh;
 }
-.heading{
+footer  p{
+  font-size: 1.2em  !important;
+  font-weight: 300 !important;
+}
+h2{
+  color: rgba(0, 0, 0, 1);
+  font-size: 3.5em;
   font-weight: 400;
-  font-size: 48px;
-}
-.main-text{
-  font-weight: 300;
-  font-size: 24px;
-}
-.service-cards-text
-{
-  font-weight: 300;
-  font-size: 32px;
-}
-.btn-contact {
-  background-color:rgba(47, 47, 47, 1);
-  color:white;
-  padding: 15px 30px; /* задаем отступы */
-  border-radius: 10px; /* скругляем углы кнопки */
-  transition: all 0.3s ease; /* плавность при изменении стилей */
-}
-.btn-contact:hover {
-  background-color: rgba(47, 47, 47, 1); /* изменение цвета фона при наведении */
-  color: #fff; /* изменение цвета текста при наведении */
+  text-align: center;
 }
 a{
   color: white;
 }
+h1{
+  color: rgba(0, 0, 0, 1);
+  font-size: 3.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
 .navbar .navbar-nav .nav-link {
   color: rgb(248, 239, 239); /* Change text color here */
 }
@@ -45,24 +38,75 @@ a{
   color: white;
 }
 .navbar-custom {
-  background-color: rgba(39, 37, 37, 0.8); /* Цвет фона с прозрачностью */
+  background-color: rgba(29, 28, 28, 0.8); /* Цвет фона с прозрачностью */
 }
-.rounded-input {
-  border-radius: 25px;
- }
-
-.table__borber {
-  border-color: rgba(47, 47, 47, 1);
+#main p{
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5em;
 }
 .main-img
 {
   width: 100%;
   height: 100%;
 }
-.maintxt > img, .overlay-text 
+.heading
 {
-  position: absolute;
+  font-size: 3.5em !important;
+  font-weight: 500 !important;
 }
+.main-container img {
+	opacity: 0.6;
+}
+.btn-contact {
+  background-color:rgba(255, 255, 255, 1);
+  color:black;
+  padding: 15px 30px; /* задаем отступы */
+  border-radius: 10px; /* скругляем углы кнопки */
+  transition: all 0.3s ease; /* плавность при изменении стилей */
+}
+.btn-contact:hover {
+  background-color: rgb(70, 70, 70); /* изменение цвета фона при наведении */
+  color: #fff; /* изменение цвета текста при наведении */
+}
+.btn-send{
+  background-color: rgb(70, 70, 70); /* изменение цвета фона при наведении */
+  color: #fff; /* изменение цвета текста при наведении */
+  padding: 15px 30px; /* задаем отступы */
+  border-radius: 10px; /* скругляем углы кнопки */
+  transition: all 0.3s ease; /* плавность при изменении стилей */
+}
+.btn-send:hover {
+  background-color:rgba(255, 255, 255, 1);
+  color:black;
+}
+#service-cards p{
+  font-weight: 400;
+  font-size: 2em;
+}
+#services h2 {
+  font-weight: 300;
+}
+#services p{
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.price-table{
+  height: 40vh;
+}
+.price-table__table__borber {
+  border-color: rgba(47, 47, 47, 1);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.rounded-input {
+  border-radius: 25px;
+ }
+
+
+
 .service-item
 {
   width: 80%; 
@@ -71,5 +115,39 @@ a{
 .service-img
 {
   height: 80%;/* Set height to 100% of parent container */
-  width: auto; 
+  width: 80%;
+}
+@media (max-width: 768px) {
+  /* Стили, которые будут применяться для устройств с максимальной шириной 768px, например, для планшетов и мобильных устройств */
+  .navbar-brand {
+    margin-right: 0; /* Уменьшаем отступ справа для логотипа в навигационной панели */
+  }
+
+  .navbar-collapse {
+    background-color: rgba(39, 37, 37, 0.8); /* Цвет фона меню на мобильных устройствах */
+    padding: 10px; /* Увеличиваем внутренний отступ для пунктов меню на мобильных устройствах */
+  }
+
+  .nav-link {
+    padding: 10px; /* Увеличиваем внутренний отступ для пунктов меню на мобильных устройствах */
+  }
+
+  .navbar-toggler {
+    margin-right: 0; /* Уменьшаем отступ справа для кнопки разворачивания меню на мобильных устройствах */
+  }
+
+  .main-text,
+  .service-cards-text,
+  .heading {
+    font-size: 20px; /* Уменьшаем размер шрифта для текста и заголовков на мобильных устройствах */
+  }
+
+  .main-img {
+    height: auto; /* Автоматический размер изображения */
+  }
+
+  .service-item,
+  .container {
+    width: 100%; /* Ширина элементов на мобильных устройствах */
+  }
 }
