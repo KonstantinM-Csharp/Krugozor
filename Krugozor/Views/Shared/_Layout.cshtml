@@ -1,3 +1,52 @@
+﻿@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Krugozor</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Krugozor.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Krugozor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Krugozor - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> *@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -57,21 +106,21 @@
   <h1 class="text-center mb-5">Услуги</h1>
   <div class="container service-cards-text">
     <div class="row">
-        <div class="col-sm-4 p-0">
+        <div class="col-sm-12 col-md-4 -0">
           <div class="item container text-center p-0">
             <img src="./img/service-cards/monolit.jpg"  alt="Монолит">
             <p>Монолитные работы</p>
           </div>
         </div>
         
-        <div class="col-sm-4 p-0">
+        <div class="col-sm-12 col-md-4 p-0">
         <div class="container text-center p-0 ">
           <img src="./img/service-cards/keramsit.jpg"  alt="Керамзитобетон">
           <p>Керамзитобетон</p>
         </div>
         </div>
 
-    <div class="col-sm-4 p-0">
+    <div class="col-sm-12 col-md-4 p-0">
       <div class="container text-center p-0">
         <img src="./img/service-cards/floor.jpg"  alt="Стяжка полов">
         <p>Стяжка полов</p>
@@ -79,21 +128,21 @@
     </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-4">
         <div class="container text-center">
           <img src="./img/service-cards/roof.jpg"  alt="Мягкая кровля">
           <p>Мягкая кровля</p>
         </div>
       </div>
       
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-4 ">
       <div class="container text-center">
         <img src="./img/service-cards/lab.jpg"  alt="Услуги лаборатории">
         <p>Услуги лаборатории</p>
       </div>
       </div>
 
-    <div class="col-md-4">
+    <div class="col-sm-12 col-md-4 ">
       <div class="container text-center">
         <img src="./img/service-cards/wall.jpg"  alt="Торкретирование стен">
         <p>Торкретирование стен</p>
@@ -131,21 +180,19 @@
       </div>
     </div>
   </div>
-  
-  <section id="services" class="my-5">
-    <div class="service-item container-fluid rounded">
-      <div class="row">
-        <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
-          <div class="container text-center">
-            <h2 class="mt-0 mb-5 heading">Стяжка полов</h2>
-            <p>Стяжка — это слой строительного раствора, который укладывают на пол для обеспечения ровной поверхности. Она состоит из цементных материалов и песка. Стяжка считается основой отделки пола и серьезно влияет на его качество</p>
-          </div>
+  <div class="service-item container-fluid rounded my-5">
+    <div class="row">
+      <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <h2 class="mt-0 mb-5 heading">Стяжка полов</h2>
+          <p>Стяжка — это слой строительного раствора, который укладывают на пол для обеспечения ровной поверхности. Она состоит из цементных материалов и песка. Стяжка считается основой отделки пола и серьезно влияет на его качество</p>
         </div>
-        <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
-          <img class="service-img" src="./img/service-cards/floor.jpg"  alt="Изображение">
       </div>
-      </div>
+      <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
+        <img class="service-img" src="./img/services/floor.png"  alt="Изображение">
     </div>
+    </div>
+  </div>
 
   <div class="service-item container-fluid rounded my-5">
     <div class="row">
@@ -154,8 +201,8 @@
       </div>
       <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
         <div class="container text-center">
-          <h2 class="mt-0 mb-5 heading">Мягкая кровля</h2>
-          <p class="main-text">Мягкая кровля - это условное название конструкции кровельного ковра на основе картона, стеклохолста и других материалов, покрытых слоем модифицированного битума. К данной категории покрытий также можно отнести рулонные материалы, ПВХ мембраны для плоских крыш.</p>
+          <h2 class="mt-0 mb-5 heading">Гидроизоляция плоской кровли</h2>
+          <p class="main-text">Гидроизоляция плоской кровли играет важную роль в обеспечении надежной защиты от воды и влаги. Она конструктивно располагается между утеплителем и верхним покрытием кровли и позволяет предотвратить проникновение влаги внутрь здания.</p>
         </div>
         </div>
     </div>
@@ -183,7 +230,7 @@
       <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
         <div class="container text-center">
           <h2 class="mt-0 mb-5 heading">Торкретирование стен</h2>
-          <p class="main-text">Торкретирование стен - это технология нанесения специальной смеси, которая осуществляется путем разбрызгивания. Выполняется это при помощи торкретного оборудования. В итоге, весь бетонный состав равномерно распределяется по поверхности, образуя плотный слой.</p>
+          <p class="main-text">Торкретирование стен - это технология нанесения специальной смеси, которая осуществляется путем разбрызгивания. Работы выполняются для реконструкции поврежденных стен, плит перекрытия, фундамента.</p>
         </div>
         </div>
     </div>
@@ -191,7 +238,7 @@
 </section>
 
 <section id="price">
-  <h1 class="text-center pt-5 my-5">Стоимость работ</h1>
+  <h1 class="text-center p-5 pb-2">Стоимость работ</h1>
 <div class="row justify-content-center">
   <div class="col-10">
     <div class="price-table p-0 my-5 justify-content-center">
@@ -246,17 +293,16 @@
 
 <section id="about-us">
 <div class="container-fluid my-5" style="background-color: rgba(241, 241, 241, 1);">
-  <div class="position-relative">
-    <div class="container-fluid">
+    <div class="container p-0">
       <h1 class="text-center py-5">О компании</h1>
       <p class="text-center">
         <b>КругозорДНР</b> - это не просто строительные специалисты, мы создаем пространства, которые превосходят ожидания. Современные технологии торкретирования стен придают проектам уникальность и стойкость. Обращаясь к нам, вы получаете не просто строительную компанию, а партнера, готового воплотить ваши идеи в реальность с вниманием к каждой детали.
       </p>
     </div>
-      <div class="container-fliud">
+      <div class="container-fluid p-0">
         <h1 class="text-center py-5">Контакты</h1>
         <!-- Первая строка -->
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm-4">
               <p>Меркулов Александр Иванович</p>
           </div>
@@ -270,7 +316,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
           <div class="col-sm-4">
               <p>Меркулов Александр Иванович</p>
           </div>
@@ -301,7 +347,7 @@
       </div>
       
       <h1 class="text-center mt-5 pb-5">Выполняем заказы по всей территории ДНР</h1>
-  </div>
+
 </div>
 </section>
 
@@ -340,20 +386,19 @@
 
 <footer class="footer container-fluid p-0 pt-3">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-12 col-md-4">
       <div class="container mt-5">
         <img src="img/logo.png">
         <p class="mt-2">г.Мариуполь, ДНР</p>
       </div>
     </div>
-    <div class="col-sm-4 d-flex flex-column justify-content-end mb-2">
+    <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-end mb-2">
       <a href="https://www.behance.net/cchesnokovaa">Design: Chesnokova Viktoria</a>
       <p class="mt-2">2024 год</p>
     </div>
-    <div class="col-sm-4 mb-2">
+    <div class="col-sm-12 col-md-4 mb-2">
       <div class="container mt-3">
-        <p>Связаться с нами:
-        </p>
+        <p>Связаться с нами:</p>
         <img src="img/icons/telegram.png"> 
         <img src="img/icons/whatsapp.png"> 
         <p class="mt-3">
