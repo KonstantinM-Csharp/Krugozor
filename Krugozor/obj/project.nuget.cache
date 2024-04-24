@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "mRB2tojCvYM000fFgGEqw+/yKIrHp7Uium4fwtEXvILDACqVYliQhf1iMOVztqtXXJlCUjqiIgOa4B7ws4moQg==",
+  "dgSpecHash": "NaAo7n1+B+LLJpfPedhQJCO3z8M8Tq+tQgmKoGafGay4fy9Ws8ZjX/ReAAiTwQgQ6o74OSR+SHv2Y0mrK92H7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Пользователь\\Desktop\\Development\\Krugozor\\Krugozor\\Krugozor.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Пользователь\\.nuget\\packages\\bouncycastle.cryptography\\2.3.0\\bouncycastle.cryptography.2.3.0.nupkg.sha512",
+    "C:\\Users\\Пользователь\\.nuget\\packages\\mailkit\\4.5.0\\mailkit.4.5.0.nupkg.sha512",
+    "C:\\Users\\Пользователь\\.nuget\\packages\\mimekit\\4.5.0\\mimekit.4.5.0.nupkg.sha512",
+    "C:\\Users\\Пользователь\\.nuget\\packages\\system.formats.asn1\\8.0.0\\system.formats.asn1.8.0.0.nupkg.sha512",
+    "C:\\Users\\Пользователь\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.0\\system.security.cryptography.pkcs.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

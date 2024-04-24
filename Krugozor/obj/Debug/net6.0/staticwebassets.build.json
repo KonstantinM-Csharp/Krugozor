@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XR963GX4tCzGWhqslwUprHTOIZ436jIAkcQk8gKszdM=",
+  "Hash": "Wfc+f4Ux14L6aW74N9wx6JwVirT/Gd2LwN7Tj726UT8=",
   "Source": "Krugozor",
   "BasePath": "_content/Krugozor",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\Пользователь\\Desktop\\Development\\Krugozor\\Krugozor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Krugozor.styles.css",
-      "SourceId": "Krugozor",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Пользователь\\Desktop\\Development\\Krugozor\\Krugozor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/Krugozor",
-      "RelativePath": "Krugozor.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Пользователь\\Desktop\\Development\\Krugozor\\Krugozor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Krugozor.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Пользователь\\Desktop\\Development\\Krugozor\\Krugozor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Krugozor.bundle.scp.css",
-      "SourceId": "Krugozor",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Пользователь\\Desktop\\Development\\Krugozor\\Krugozor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/Krugozor",
-      "RelativePath": "Krugozor.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Пользователь\\Desktop\\Development\\Krugozor\\Krugozor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Krugozor.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\Пользователь\\Desktop\\Development\\Krugozor\\Krugozor\\wwwroot\\css\\main.css",
       "SourceId": "Krugozor",
