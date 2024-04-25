@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model bool
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -61,21 +62,21 @@
         <h1 class="text-center mb-5">Услуги</h1>
         <div class="container service-cards-text">
             <div class="row">
-                <div class="col-sm-12 col-md-4 -0">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 p-0">
                     <div class="item container text-center p-0">
                         <img src="./img/service-cards/monolit.jpg" alt="Монолит">
                         <p>Монолитные работы</p>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 p-0">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 p-0">
                     <div class="container text-center p-0 ">
                         <img src="./img/service-cards/keramsit.jpg" alt="Керамзитобетон">
                         <p>Керамзитобетон</p>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 p-0">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 p-0">
                     <div class="container text-center p-0">
                         <img src="./img/service-cards/floor.jpg" alt="Стяжка полов">
                         <p>Стяжка полов</p>
@@ -83,21 +84,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 p-0">
                     <div class="container text-center">
-                        <img src="./img/service-cards/roof.jpg" alt="Мягкая кровля">
-                        <p>Мягкая кровля</p>
+                        <img src="./img/service-cards/roof.jpg" alt="Гидроизоляция плоской кровли">
+                        <p>Гидроизоляция плоской кровли</p>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 ">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 p-0">
                     <div class="container text-center">
                         <img src="./img/service-cards/lab.jpg" alt="Услуги лаборатории">
                         <p>Услуги лаборатории</p>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 ">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 p-0">
                     <div class="container text-center">
                         <img src="./img/service-cards/wall.jpg" alt="Торкретирование стен">
                         <p>Торкретирование стен</p>
@@ -317,12 +318,14 @@
                 <p class="text-center my-5">
                     Заполните данные и мы свяжемся с вами
                     в ближайшее время!
+                    <br>Указывайте корректные данные, чтобы мы могли быстро с вами связаться!
                 </p>
+                    
             </div>
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <form @* action="/Mail/SendMessage" method="post" *@>
+                        <form id="send-form">
                             <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Имя" name="firstName" required>
                             </div>
@@ -336,13 +339,14 @@
                                 <input type="email" class="form-control" placeholder="Email" name="email" required>
                             </div>
                             <div class="text-center mt-5">
-                                <!-- Добавленный элемент для центрирования -->
                                 <button id="submit-button" type="submit" class="btn btn-send">Отправить</button>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
+
+                <p id="message-result" class="row justify-content-center"></p>
+                </div>
         </div>
     </section>
 

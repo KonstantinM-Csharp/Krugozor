@@ -92,7 +92,11 @@ a {
     font-weight: 300;
     line-height: 1.2;
 }
-
+#contact p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 2em;
+}
 .price-table {
     height: 40vh;
 }

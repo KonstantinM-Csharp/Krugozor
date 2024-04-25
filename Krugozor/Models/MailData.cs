@@ -3,38 +3,17 @@
     public class MailData
     {
             // Receiver
-            public string To { get; }
+            public string To { get; set; }
 
             // Sender
-            public string? From { get; }
+            public string? From { get; set; }
 
-            public string? DisplayName { get; }
-
+            public string? DisplayName { get; set; }
 
             // Content
-            public string Subject { get; }
+            public string Subject { get; set; }
 
             public string? Body { get; set; }
-
-            public MailData(
-                string to,
-                string subject,
-                string? body = null,
-                string? from = null,
-                string? displayName = null
-            )
-            {
-                // Receiver
-                To = to;
-
-                // Sender
-                From = from;
-                DisplayName = displayName;
-
-                // Content
-                Subject = subject;
-                Body = body;
-            }
         }
     
 }

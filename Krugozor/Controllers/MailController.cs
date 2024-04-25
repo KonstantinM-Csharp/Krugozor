@@ -1,6 +1,7 @@
 ﻿using Krugozor.Models;
 using Krugozor.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Org.BouncyCastle.Asn1.Pkcs;
 using System.Diagnostics;
 
@@ -11,11 +12,11 @@ namespace Krugozor.Controllers
         private readonly ILogger<MailController> _logger;
         private readonly IMailService _mail;
         private readonly MailData _mailData;
-        public MailController(ILogger<MailController> logger, IMailService mail, MailData mailData)
+        public MailController(ILogger<MailController> logger, IMailService mail, IOptions<MailData> mailData)
         {
             _logger = logger;
             _mail = mail;
-            _mailData = mailData;
+            _mailData = mailData.Value;
         }
 
         public IActionResult Index()
@@ -23,7 +24,7 @@ namespace Krugozor.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<bool> SendMessage()
+        public async Task<string> SendMessage()
         {
             try
             {
@@ -42,19 +43,19 @@ namespace Krugozor.Controllers
                 if (result)
                 {
                     _logger.LogInformation("Сообщение успешно отправлено.");
-                    return true;// Вернуть ответ об успешном выполнении
+                    return "Сообщение успешно отправлено. С вами свяжутся в ближайшее время.";// Вернуть ответ об успешном выполнении
                 }
                 else
                 {
                     _logger.LogInformation("Сообщение не было отправлено.");
-                    return false; // Вернуть ответ о неуспешном выполнении
+                    return "Сообщение не было отправлено. Попробуйте написать нам на почту или позвонить.";  // Вернуть ответ о неуспешном выполнении
                 }
                 
             }
             catch(Exception ex)
             {
                 _logger.LogError(ex.GetBaseException().Message);
-                return false;
+                return "Сообщение не было отправлено.";
             }
         }
     }
